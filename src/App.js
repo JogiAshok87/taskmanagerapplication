@@ -9,7 +9,9 @@ export const App = () => {
   const [editingTask, setEditingTask] = useState(null);
 
   useEffect(() => {
-    const storedTasks = JSON.parse(localStorage.getItem('tasks') || []);
+    const storedTasksString = localStorage.getItem('tasks');
+    const storedTasks = storedTasksString ? JSON.parse(storedTasksString) : [];
+    
     console.log('Stored tasks:', storedTasks);
     setTasks(storedTasks);
   }, []);
