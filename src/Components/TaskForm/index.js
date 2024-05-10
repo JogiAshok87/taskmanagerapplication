@@ -1,7 +1,7 @@
 import React, { useState,useEffect} from 'react';
 import './index.css'
 
-// TaskForm Component
+
 const TaskForm = ({ task, addTask, updateTask, cancelEdit }) => {
     const [newTask, setNewTask] = useState(task || {
       title: '',

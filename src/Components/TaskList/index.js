@@ -3,7 +3,7 @@ import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
 import Task from '../Task';
 import './index.css';
 
-// TaskList Component
+
 const TaskList = ({ tasks, toggleCompleted, editTask, deleteTask }) => {
   const [filter, setFilter] = useState('all');
   const [sortBy, setSortBy] = useState('default');
@@ -32,8 +32,7 @@ const TaskList = ({ tasks, toggleCompleted, editTask, deleteTask }) => {
     const [reorderedItem] = items.splice(result.source.index, 1);
     items.splice(result.destination.index, 0, reorderedItem);
 
-    // You may want to update the task order in your state or perform any other necessary operations here.
-    // For example, you could dispatch an action to update the task order in your Redux store.
+   
   };
 
   return (

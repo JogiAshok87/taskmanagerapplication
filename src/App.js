@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import TaskForm from './Components/TaskForm';
 import TaskList from './Components/TaskList';
 
-// App Component
+
 export const App = () => {
   const [tasks, setTasks] = useState([]);
   const [editingTask, setEditingTask] = useState(null);
@@ -11,7 +11,7 @@ export const App = () => {
   useEffect(() => {
     const storedTasksString = localStorage.getItem('tasks');
     const storedTasks = storedTasksString ? JSON.parse(storedTasksString) : [];
-    
+
     console.log('Stored tasks:', storedTasks);
     setTasks(storedTasks);
   }, []);
