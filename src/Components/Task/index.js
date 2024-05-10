@@ -29,11 +29,11 @@ const Task = ({ task, toggleCompleted, editTask, deleteTask }) => {
             checked={task.completed}
             onChange={() => toggleCompleted(task.id)}
           />
-          <div>
+          <div className='task-description'>
             <h3>{task.title}</h3>
             <p>{task.description}</p>
-            <p>Priority: {task.priority}</p>
-            <p>Due Date: {task.dueDate}</p>
+            <p><strong>Priority: </strong> {task.priority}</p>
+            <p><strong>Due Date: </strong> {task.dueDate}</p>
           </div>
         </div>
         <div className="task-actions">

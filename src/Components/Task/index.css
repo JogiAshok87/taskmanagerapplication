@@ -26,6 +26,9 @@
   .task-actions button {
     margin-left: 5px;
   }
+  .task-description h3,p{
+    color:#26495c;
+  }
 
   .edit-btn{
     border:none;
