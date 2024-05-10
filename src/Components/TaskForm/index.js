@@ -80,6 +80,7 @@ const TaskForm = ({ task, addTask, updateTask, cancelEdit }) => {
           name="dueDate"
           value={newTask.dueDate}
           onChange={handleChange}
+          className='datapicer'
           required
         />
         <button type="submit">{task ? 'Update Task' : 'Add Task'}</button>

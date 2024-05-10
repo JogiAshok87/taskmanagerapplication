@@ -37,7 +37,7 @@ const TaskList = ({ tasks, toggleCompleted, editTask, deleteTask }) => {
   };
 
   return (
-    <div>
+    <div className='tasklist-container'>
       <div className="filter-sort">
         <div className="filter-options">
           <label>Filter: </label>
@@ -82,7 +82,7 @@ const TaskList = ({ tasks, toggleCompleted, editTask, deleteTask }) => {
                         opacity: snapshot.isDragging ? 0.5 : 1,
                         backgroundColor: snapshot.isDragging
                           ? 'lightgray'
-                          : 'white',
+                          : '',
                       }}
                     >
                       <Task

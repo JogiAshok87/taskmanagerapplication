@@ -15,7 +15,8 @@
   }
   
   .task-info input[type="checkbox"] {
-    margin-right: 20px;
+    transform: scale(1.2);
+    margin-right: 40px;
   }
   
   .task-actions {

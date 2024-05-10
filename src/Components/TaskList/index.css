@@ -5,10 +5,14 @@
     justify-content: space-between;
     margin-bottom: 10px;
   }
+  .tasklist-container{
+    background-color:  #e5e5dc;
+  }
   
   .task-list {
     display: flex;
     flex-direction: column;
+    background-color: transparent;
   }
   .filter-options select{
     padding:3px;

@@ -14,9 +14,19 @@ form {
     padding: 5px;
     border-radius: 3px;
     border: 1px solid #ccc;
+    font-size: 15px;
   }
   
   form textarea {
     flex-grow: 1;
   }
   
+  form button{
+    background-color: #667399;
+    color:#fff;
+    padding:5px;
+    cursor:pointer;
+  }
+  .datapicer{
+    cursor: pointer;
+  }
